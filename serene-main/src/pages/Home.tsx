@@ -81,7 +81,7 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">What is Serene MUN?</h2>
           <p className="text-lg leading-relaxed">
             <strong>Unity in Calm: Crafting Global Peace through Diplomatic Serenity</strong><br /><br />
-            A serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
+            Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
             diverse backgrounds come together in a respectful and thoughtful environment. The focus is on
             listening, understanding, and finding common ground rather than dominating debate. Calm, composed
             dialogue takes precedence over heated rhetoric, encouraging meaningful collaboration that mirrors
