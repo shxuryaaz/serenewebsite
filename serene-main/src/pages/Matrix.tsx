@@ -5,39 +5,29 @@ export default function Matrix() {
         <h2 className="text-3xl font-bold text-[#152238] text-center mb-12">
           Committee Matrix
         </h2>
-        
+
         <div className="bg-white rounded-lg shadow-lg p-8">
           <div className="mb-6 flex justify-end">
-            <button className="bg-[#152238] text-white px-4 py-2 rounded-md hover:bg-[#1a2a4a] transition-colors">
-              Download Matrix
-            </button>
+            <a
+              href="https://docs.google.com/spreadsheets/d/142CKWpL2vNyEaaSDEX4qciL4CrYkkMRoZ23wVzhKTho/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#152238] text-white px-4 py-2 rounded-md hover:bg-[#1a2a4a] transition-colors">
+                Open in Google Sheets
+              </button>
+            </a>
           </div>
-          
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Country
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    UNGA
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    UNHRC
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    UNCSW
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    ICJ
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {/* Add your matrix data here */}
-              </tbody>
-            </table>
+
+          <div className="overflow-hidden rounded-lg">
+            <iframe
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBOUjU3VnEGwOAw5LuMRRZsPyYuvEjXwQ2Qa1eAxV7wIPakOxEZaU0h9SMFrbcELO7l_j0uxdRTib0/pubhtml?widget=true&amp;headers=false"
+              width="100%"
+              height="600"
+              className="w-full border-none rounded-lg"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
