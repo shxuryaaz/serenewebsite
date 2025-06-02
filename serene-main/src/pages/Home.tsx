@@ -19,7 +19,7 @@ export default function Home() {
         loop
         playsInline
         className="fixed inset-0 w-full h-full object-cover object-center -z-10"
-        src="/videoplayback.mp4"
+        src="/bgvideo.mp4"
       />
 
       {/* Hero Section */}
