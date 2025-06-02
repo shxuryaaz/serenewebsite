@@ -1,5 +1,7 @@
 'use client';
+
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function Home() {
   // Scroll handler for the arrow click
@@ -9,6 +11,35 @@ export default function Home() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // Visitor tracking useEffect
+  useEffect(() => {
+    const sendVisitorData = async () => {
+      try {
+        // Get IP address
+        const res = await fetch('https://api.ipify.org?format=json');
+        const { ip } = await res.json();
+
+        const userAgent = navigator.userAgent;
+
+        // Send data to your Google Apps Script Web App URL
+        await fetch('https://script.google.com/macros/s/AKfycbykJlBu1TRFE8RH07CBuyhnzuIxdWgAJ5F78eTEMJJ7S8AgZ2Cx5ydV-f_SdMmAeceE/exec', {
+          method: 'POST',
+          body: JSON.stringify({
+            ip,
+            userAgent,
+          }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+      } catch (err) {
+        console.error('Tracking failed', err);
+      }
+    };
+
+    sendVisitorData();
+  }, []);
 
   return (
     <div className="relative min-h-screen bg-transparent overflow-hidden">
@@ -45,9 +76,7 @@ export default function Home() {
             </a>
 
             {/* Date of the MUN */}
-            <p className="text-gray-200 mb-10 text-lg font-medium">
-              2-3 August 2025
-            </p>
+            <p className="text-gray-200 mb-10 text-lg font-medium">2-3 August 2025</p>
 
             <div
               className="animate-bounce cursor-pointer"
@@ -80,7 +109,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">What is Serene MUN?</h2>
           <p className="text-lg leading-relaxed">
-            <strong>Unity in Calm: Crafting Global Peace through Diplomatic Serenity</strong><br /><br />
+            <strong>Unity in Calm: Crafting Global Peace through Diplomatic Serenity</strong>
+            <br />
+            <br />
             Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
             diverse backgrounds come together in a respectful and thoughtful environment. The focus is on
             listening, understanding, and finding common ground rather than dominating debate. Calm, composed
