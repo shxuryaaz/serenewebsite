@@ -9,7 +9,7 @@ export async function handler(event: any) {
     timestamp
   };
 
-  const webhookURL = "YOUR_GOOGLE_APPS_SCRIPT_WEBHOOK_URL"; // replace this
+  const webhookURL = "https://script.google.com/macros/s/AKfycbwiUVV5hqoKy-U7AuVBTqx9U_0dZ-AkIduGbwni9Lxv02C5GzSE1iZikgoQ3T8c16gO/exec"; // replace this
 
   try {
     await fetch(webhookURL, {
