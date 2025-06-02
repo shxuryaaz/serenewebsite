@@ -12,11 +12,18 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState('home');
 
+  // 🔥 LOG VISITOR TRAFFIC
+  useEffect(() => {
+    fetch('/.netlify/functions/logTraffic')
+      .then(res => res.json())
+      .then(data => console.log('Visitor logged:', data))
+      .catch(err => console.error('Logging failed:', err));
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2500);
-
     return () => clearTimeout(timer);
   }, []);
 
