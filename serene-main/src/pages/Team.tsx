@@ -36,7 +36,11 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
           onClick={() => setOpenModal('founder')}
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-48 h-48 bg-gray-200 rounded-full flex-shrink-0" />
+            <img
+              src="/hrisik.jpg"
+              alt="Founder - Hrisik Ladia"
+              className="w-48 h-48 object-cover rounded-full shadow-md"
+            />
             <div>
               <h3 className="text-2xl font-bold mb-1">Founder's Message</h3>
               <p className="text-lg font-medium text-[#152238] mb-2">Hrisik Ladia</p>
@@ -53,7 +57,11 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
           onClick={() => setOpenModal('president')}
         >
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-48 h-48 bg-gray-200 rounded-full flex-shrink-0" />
+            <img
+              src="/eva.jpg"
+              alt="President - Eva Uniyal"
+              className="w-48 h-48 object-cover rounded-full shadow-md"
+            />
             <div>
               <h3 className="text-2xl font-bold mb-1">President's Message</h3>
               <p className="text-lg font-medium text-[#152238] mb-2">Eva Uniyal</p>
