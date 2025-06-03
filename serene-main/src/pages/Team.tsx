@@ -38,12 +38,12 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
           <div className="flex flex-col md:flex-row items-center gap-8">
             <img
               src="/hrisik.jpg"
-              alt="Founder - Hrisik Ladia"
+              alt="Founder - Hrisik"
               className="w-48 h-48 object-cover rounded-full shadow-md"
             />
             <div>
               <h3 className="text-2xl font-bold mb-1">Founder's Message</h3>
-              <p className="text-lg font-medium text-[#152238] mb-2">Hrisik Ladia</p>
+              <p className="text-lg font-medium text-[#152238] mb-2">Hrisik</p>
               <p className="text-gray-600 italic">
                 Click to read a message from the founder about the vision and soul of Serene MUN.
               </p>
