@@ -5,7 +5,7 @@ import { Dialog } from '@headlessui/react';
 export default function Team() {
   const [openModal, setOpenModal] = useState<null | 'founder' | 'president'>(null);
 
-  const founderMessage = `As the Founder of Serene Model United Nations, it is with immense pride and emotion that I welcome you to the first edition of our journey.
+  const founderMessage = `As the Founder of Serene Model United Nations, it is with immense pridee and emotion that I welcome you to the first edition of our journey.
 
 Serene MUN was born from a simple yet powerful vision — where diplomacy is more than debate. It's about empathy, respect, and calm leadership.
 
