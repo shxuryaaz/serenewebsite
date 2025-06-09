@@ -22,7 +22,6 @@ export default function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
   const navLinks = [
     { name: 'Home', id: 'home' },
     { name: 'Committees', id: 'committees' },
-    { name: 'Team', id: 'team' },
     { name: 'Matrix', id: 'matrix' },
     { name: 'Registration', id: 'registration' },
   ];
