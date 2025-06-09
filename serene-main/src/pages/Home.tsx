@@ -19,7 +19,7 @@ export default function Home() {
         loop
         playsInline
         className="fixed inset-0 w-full h-full object-cover object-center -z-10"
-        src="/videoplayback.mp4"
+        src="/bgvideo.mp4"
       />
 
       {/* Hero Section */}
@@ -78,7 +78,7 @@ export default function Home() {
         transition={{ duration: 1 }}
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">About Serene MUN?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">About Serene MUN</h2>
           <p className="text-lg leading-relaxed">
             <strong>Unity in Calm: Crafting Global Peace through Diplomatic Serenity</strong><br /><br />
             Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
