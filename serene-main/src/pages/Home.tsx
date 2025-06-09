@@ -142,7 +142,7 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
       {/* Team Section */}
       <div className="bg-white text-[#152238] py-24 px-6 sm:px-12 lg:px-32">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Team</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Visionaries</h2>
 
           {/* Founder's Message */}
           <div
