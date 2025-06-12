@@ -103,15 +103,24 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
         transition={{ duration: 1 }}
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">What is Serene MUN?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">About Serene MUN</h2>
           <p className="text-lg leading-relaxed">
             <strong>Unity in Calm: Crafting Global Peace through Diplomatic Serenity</strong><br /><br />
-            Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
-            diverse backgrounds come together in a respectful and thoughtful environment. The focus is on
-            listening, understanding, and finding common ground rather than dominating debate. Calm, composed
-            dialogue takes precedence over heated rhetoric, encouraging meaningful collaboration that mirrors
-            the UN's real mission—maintaining international peace and security.
-          </p>
+    Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
+    diverse backgrounds come together in a respectful and thoughtful environment. The focus is on
+    listening, understanding, and finding common ground rather than dominating debate. Calm, composed
+    dialogue takes precedence over heated rhetoric, encouraging meaningful collaboration that mirrors
+    the UN's real mission—maintaining international peace and security.<br /><br />
+    At SereneMUN, diplomacy is not a competition — it's a conversation. Our conferences create a space where the 
+    power of words is valued more than volume, and empathy is the most persuasive tool. Delegates are encouraged 
+    to see through different lenses, embrace cultural diversity, and navigate complex global issues through patience, 
+    intellect, and unity.<br /><br />
+    What sets SereneMUN apart is its commitment to <em>serenity as a strategy</em>. We believe that impactful solutions stem 
+    from mutual respect, active listening, and balanced discourse. By nurturing future leaders in a calm, inclusive 
+    atmosphere, we aim to cultivate not just skilled diplomats, but compassionate global citizens.<br /><br />
+    Whether you're a seasoned MUN participant or a first-time delegate, SereneMUN offers a unique platform where your 
+    voice is heard, your ideas matter, and your presence contributes to a shared mission — building a more peaceful world, 
+    one resolution at a time.</p>
         </div>
       </motion.div>
 
