@@ -7,12 +7,12 @@ import Committees from './pages/Committees';
 import Team from './pages/Team';
 import Matrix from './pages/Matrix';
 import Registration from './pages/Registration';
+import Footer from './components/Footer'; // ✅ Add this line
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState('home');
 
-  // 🔥 LOG VISITOR TRAFFIC
   useEffect(() => {
     fetch('/.netlify/functions/logTraffic')
       .then(res => res.json())
@@ -52,6 +52,7 @@ function App() {
     <div className={`min-h-screen ${currentPage === 'home' ? 'bg-transparent' : 'bg-white'}`}>
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
+      <Footer /> {/* ✅ Add this at the bottom */}
     </div>
   );
 }
