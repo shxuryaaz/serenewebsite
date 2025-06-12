@@ -4,23 +4,21 @@ const Footer = () => {
   return (
     <footer className="bg-black text-gray-300 px-6 py-10 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-gray-700 pb-8">
-        {/* Branding */}
-        <div>
-          <h2 className="text-2xl font-bold text-white mb-2">SereneMUN</h2>
+        {/* Branding with Logo */}
+        <div className="flex flex-col gap-3">
+          <img src="/serene.png" alt="SereneMUN Logo" className="w-28 h-auto" />
           <p className="text-sm text-gray-400">
             Fostering diplomacy, leadership, and global dialogue through youth engagement.
           </p>
         </div>
 
-        {/* Navigation Links */}
+        {/* Replaced Explore with Vision */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Explore</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="/about" className="hover:text-white transition-all">About</a></li>
-            <li><a href="/events" className="hover:text-white transition-all">Events</a></li>
-            <li><a href="/team" className="hover:text-white transition-all">Team</a></li>
-            <li><a href="/contact" className="hover:text-white transition-all">Contact</a></li>
-          </ul>
+          <h3 className="text-lg font-semibold text-white mb-3">Our Vision</h3>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            To empower the next generation of leaders through meaningful dialogue, global awareness, and peaceful diplomacy.
+            We aim to create a space where thoughtful discourse shapes a more united world.
+          </p>
         </div>
 
         {/* Social and Contact */}
