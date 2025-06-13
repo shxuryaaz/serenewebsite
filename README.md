@@ -2,6 +2,8 @@
 
 This is the official website of **Serene MUN**, a Model United Nations platform built to promote diplomacy, dialogue, and development. The website serves as the central hub for event details, delegate registration, and organizational communication.
 
+🌐 **Live Website:** [www.serenemun.org](https://www.serenemun.org)
+
 > **Currently live with over 800+ unique visitors within just 2 weeks of launch.**
 
 ---
@@ -10,12 +12,16 @@ This is the official website of **Serene MUN**, a Model United Nations platform 
 
 - Fully responsive and interactive React-based website
 - Deployed on **Netlify** with continuous deployment via GitHub
-- Clean, smooth animations using **Framer Motion**
-- Custom video background embedded from local assets
-- Team section with interactive modals for leadership messages
-- Real-time analytics system logging IP addresses, geolocation, user agent, and timestamp using **Google Apps Script**
-- Analytics data stored securely in Google Sheets
-- Integrated with public Google Sheets for committee matrix and registration forms
+- Smooth animations using **Framer Motion**
+- Video background powered by locally hosted media
+- Interactive Team section with modals for Founder's and President's messages
+- Real-time analytics logging:
+  - IP address
+  - City, region, country
+  - Timezone and ISP
+  - Timestamp and user agent
+- Analytics stored in **Google Sheets** via Google Apps Script
+- Google Sheets integration for committee matrix and registration
 
 ---
 
@@ -24,7 +30,7 @@ This is the official website of **Serene MUN**, a Model United Nations platform 
 | Area            | Technology Used                        |
 |-----------------|----------------------------------------|
 | Frontend        | React.js, Tailwind CSS, Framer Motion  |
-| Deployment      | Netlify                               |
+| Deployment      | Netlify                                |
 | Analytics       | Google Apps Script, Google Sheets      |
 | IP & Location   | IPinfo.io API + Apps Script Web App    |
 | Media Handling  | Local video (`bgvideo.mp4` in `/public`) |
@@ -33,16 +39,14 @@ This is the official website of **Serene MUN**, a Model United Nations platform 
 
 ## Key Features
 
-- Homepage with embedded auto-playing video background
-- "What is Serene MUN" and "Why Participate?" sections with structured content
-- Interactive modals for Founder's and President's messages
-- Matrix and Registration linked from embedded Google Sheets
-- Google Apps Script analytics capturing:
-  - IP Address
-  - City, Region, Country
-  - Timezone, ISP/Organization
-  - Timestamp and user agent
-- Backend-less, lightweight architecture for ease of deployment and scalability
+- Homepage with auto-playing background video
+- "What is Serene MUN?" and "Why Participate?" sections for outreach
+- Dynamic Team section with modal popups
+- Google Sheets embedded for:
+  - Committee matrix
+  - Delegate registration
+- Lightweight, backend-less architecture
+- IP-based real-time analytics integrated via Apps Script
 
 ---
 
@@ -50,16 +54,14 @@ This is the official website of **Serene MUN**, a Model United Nations platform 
 
 - **Unique Visitors:** 800+
 - **Top Countries:** India, Nepal
-- **Peak Hours:** 7 PM to 10 PM IST
 - **Top Cities:** Delhi, Noida, Ghaziabad
+- **Peak Traffic Time:** 7 PM to 10 PM IST
 
-All analytics are logged in real-time to a secure Google Sheet, offering a lightweight alternative to traditional analytics tools like Google Analytics.
+Real-time analytics are recorded in Google Sheets using a custom Apps Script setup, offering transparency and simplicity as an alternative to tools like Google Analytics.
 
 ---
 
 ## Getting Started Locally
-
-To run the project locally:
 
 ```bash
 git clone https://github.com/your-username/serene-mun-website.git
@@ -68,13 +70,15 @@ npm install
 npm start
 ```
 
-Ensure that `bgvideo.mp4` is placed inside the `public/` folder to render the homepage video properly.
+Make sure `bgvideo.mp4` is placed in the `/public` directory to render the homepage video correctly.
 
 ---
 
 ## Deployment
 
-This project is deployed using [Netlify](https://www.netlify.com/), with automatic deployment triggered on every push to the `main` branch of the GitHub repository.
+Deployed on **Netlify** with continuous integration. All commits to the `main` branch automatically redeploy the latest version.
+
+🔗 **Live Link:** [www.serenemun.org](https://www.serenemun.org)
 
 ---
 
@@ -82,18 +86,18 @@ This project is deployed using [Netlify](https://www.netlify.com/), with automat
 
 **Shaurya Singh**  
 Frontend and Blockchain Developer  
-Email: [shauryajps@gmail.com]  
-LinkedIn: [https://linkedin.com/in/shauryasingh28]
+Email: [shauryajps@gmail.com](mailto:shauryajps@gmail.com)  
+LinkedIn: [https://linkedin.com/in/shauryasingh28](https://linkedin.com/in/shauryasingh28)
 
 ---
 
 ## Credits
 
-- Serene MUN Core Team – Content and Vision
-- Google Apps Script – Real-time analytics backend
+- Serene MUN Core Team – Content, Design Direction
+- Google Apps Script – IP + location analytics
 
 ---
 
 ## Contribution
 
-Suggestions and contributions are welcome. If you'd like to improve the UI, enhance analytics, or integrate Firebase-based registration, feel free to fork the repository and submit a pull request.
+Contributions are welcome. You may fork the repository and open pull requests to improve UI, enhance features, or add more analytics integrations.
