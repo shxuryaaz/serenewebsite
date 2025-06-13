@@ -82,8 +82,8 @@ This project is deployed using [Netlify](https://www.netlify.com/), with automat
 
 **Shaurya Singh**  
 Frontend and Blockchain Developer  
-Email: [your.email@example.com]  
-LinkedIn: [https://linkedin.com/in/your-profile]
+Email: [shauryajps@gmail.com]  
+LinkedIn: [https://linkedin.com/in/shauryasingh28]
 
 ---
 
