@@ -49,9 +49,9 @@ This is the official website of **Serene MUN**, a Model United Nations platform 
 ## Traffic Analytics (First 2 Weeks)
 
 - **Unique Visitors:** 800+
-- **Top Countries:** India, USA, UK, UAE, Singapore
+- **Top Countries:** India, Nepal
 - **Peak Hours:** 7 PM to 10 PM IST
-- **Top Cities:** Delhi, Mumbai, Bangalore
+- **Top Cities:** Delhi, Noida, Ghaziabad
 
 All analytics are logged in real-time to a secure Google Sheet, offering a lightweight alternative to traditional analytics tools like Google Analytics.
 
