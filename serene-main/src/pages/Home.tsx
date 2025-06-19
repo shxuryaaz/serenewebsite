@@ -71,7 +71,7 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
 
             {/* Date of the MUN */}
             <p className="text-gray-200 mb-10 text-lg font-medium">
-              26th-27th July 2025
+              26th - 27th July 2025
             </p>
 
             <div
