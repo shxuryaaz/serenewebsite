@@ -73,7 +73,7 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
 
             {/* Venue */}
             <p className="text-gray-200 mb-10 text-lg font-medium">
-              Delhi Metropolitan Education, Block B, Industrial Area, Sector 62, Noida, Uttar Pradesh
+              Venue - Delhi Metropolitan Education College Noida (DME)
             </p>
 
             <div
