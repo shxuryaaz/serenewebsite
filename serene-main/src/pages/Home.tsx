@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Dialog } from '@headlessui/react';
 
 export default function Home() {
-  // Scroll handler for the arrow click
   const scrollToWhatIs = () => {
     const element = document.getElementById('what-is-serene-mun');
     if (element) {
@@ -12,7 +11,6 @@ export default function Home() {
     }
   };
 
-  // Modal state for Team messages
   const [openModal, setOpenModal] = useState<null | 'founder' | 'president'>(null);
 
   const founderMessage = `As the Founder of Serene Model United Nations, it is with immense pride and emotion that I welcome you to the first edition of our journey.
@@ -59,7 +57,6 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
               Diplomacy. Dialogue. Development.
             </p>
 
-            {/* Register Now Button */}
             <a
               href="https://linktr.ee/Serenemun"
               target="_blank"
@@ -69,9 +66,14 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
               Register Now
             </a>
 
-            {/* Date of the MUN */}
-            <p className="text-gray-200 mb-10 text-lg font-medium">
+            {/* Date */}
+            <p className="text-gray-200 mb-2 text-lg font-medium">
               26th - 27th July 2025
+            </p>
+
+            {/* Venue */}
+            <p className="text-gray-200 mb-10 text-lg font-medium">
+              Delhi Metropolitan Education, Block B, Industrial Area, Sector 62, Noida, Uttar Pradesh
             </p>
 
             <div
@@ -93,7 +95,7 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
         </div>
       </div>
 
-      {/* What is Serene MUN? Section */}
+      {/* About Section */}
       <motion.div
         id="what-is-serene-mun"
         className="bg-white text-[#152238] py-24 px-6 sm:px-12 lg:px-32 mt-[600px]"
@@ -106,25 +108,14 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">About Serene MUN</h2>
           <p className="text-lg leading-relaxed">
             <strong>Unity in Calm: Crafting Global Peace through Diplomatic Serenity</strong><br /><br />
-    Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
-    diverse backgrounds come together in a respectful and thoughtful environment. The focus is on
-    listening, understanding, and finding common ground rather than dominating debate. Calm, composed
-    dialogue takes precedence over heated rhetoric, encouraging meaningful collaboration that mirrors
-    the UN's real mission—maintaining international peace and security.<br /><br />
-    At SereneMUN, diplomacy is not a competition — it's a conversation. Our conferences create a space where the 
-    power of words is valued more than volume, and empathy is the most persuasive tool. Delegates are encouraged 
-    to see through different lenses, embrace cultural diversity, and navigate complex global issues through patience, 
-    intellect, and unity.<br /><br />
-    What sets SereneMUN apart is its commitment to <em>serenity as a strategy</em>. We believe that impactful solutions stem 
-    from mutual respect, active listening, and balanced discourse. By nurturing future leaders in a calm, inclusive 
-    atmosphere, we aim to cultivate not just skilled diplomats, but compassionate global citizens.<br /><br />
-    Whether you're a seasoned MUN participant or a first-time delegate, SereneMUN offers a unique platform where your 
-    voice is heard, your ideas matter, and your presence contributes to a shared mission — building a more peaceful world, 
-    one resolution at a time.</p>
+            Serene Model United Nations embodies the essence of peaceful diplomacy, where delegates from
+            diverse backgrounds come together in a respectful and thoughtful environment. The focus is on
+            listening, understanding, and finding common ground rather than dominating debate...
+          </p>
         </div>
       </motion.div>
 
-      {/* Why Participate Section */}
+      {/* Why Participate */}
       <motion.div
         id="why-participate"
         className="bg-white text-[#152238] py-24 px-6 sm:px-12 lg:px-32"
@@ -153,7 +144,6 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Our Visionaries</h2>
 
-          {/* Founder's Message */}
           <div
             className="mb-16 bg-[#f9f9f9] rounded-lg shadow-lg p-8 cursor-pointer hover:bg-[#ececec] transition-colors"
             onClick={() => setOpenModal('founder')}
@@ -174,7 +164,6 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
             </div>
           </div>
 
-          {/* President's Message */}
           <div
             className="bg-[#f9f9f9] rounded-lg shadow-lg p-8 cursor-pointer hover:bg-[#ececec] transition-colors"
             onClick={() => setOpenModal('president')}
@@ -196,7 +185,6 @@ Together, we're building the future of diplomacy — grounded in calmness and pu
           </div>
         </div>
 
-        {/* Modal for full messages */}
         <Dialog
           open={openModal !== null}
           onClose={() => setOpenModal(null)}
